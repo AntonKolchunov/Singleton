@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singleton</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo_link">
+                        <img src="./img/svg/header-logo.svg" alt="Studio-like photos. Without the studio."
+                            class="header_logo_img">
+                    </a>
+                </div>
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="/#!">Shop</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="/#!">Products</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="/#!">Services</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="/#!">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <span>Cart
+                    <a href="/" class="header_cart_number_logo">
+                        <img src="./img/svg/header-number-cart.svg" alt="Second page of cart."
+                            class="header_cart_number_img">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <!-- First page start-->
+            <div class="main_page">
+                <form class="group_selector">
+                    <fieldset>
+                        <input id="first_variant" type="radio" name="radio_main" class="column_radio" />
+                        <input id="second_variant" type="radio" name="radio_main" class="column_radio" checked />
+                        <input id="third_variant" type="radio" name="radio_main" class="column_radio" />
+                        <input id="fourth_variant" type="radio" name="radio_main" class="column_radio" />
+                    </fieldset>
+                </form>
+                <img src="./img/svg/phone.svg" alt="Phone" class="phone_img">
+                <section class="main_page_description">
+                    <h1 class="main_page_description_header">Studio-like photos. Without the studio.</h1>
+                    <p class="main_page_description_p">Never worry about storing, finding, or sharing your memories
+                        thanks to unlimited storage in high quality on Google Photos.</p>
+                    <form class="count_for_buying_form">
+                        <fieldset>
+                            <input type="number" class="count_for_buying_num" size="1" name="num" min="1" max="10"
+                                value="1">
+                            <div class="input_arrows">
+                                <button type="button"><img src="./img/svg/arrow_up.svg" alt="Arrow Up"></button>
+                                <button type="button"><img src="./img/svg/arrow_down.svg" alt="Arrow Down"></button>
+                            </div>
+                            <input type="submit" class="button_for_buying_num" value="Buy for $999">
+                        </fieldset>
+                    </form>
+                    <footer>
+                        <span>The product image is taken from store.google.com</span>
+                        <img src="./img/svg/message_img_main_page_footer.svg" alt="Message image"
+                            class="message_img_main_page_footer_img" />
+                    </footer>
+                </section>
+            </div>
+            <!-- First page end-->
+            <!-- Second page start-->
+            <div class="second_page">
+                <div class="second_page_wrapper">
+                    <section class="second_page_text">
+                        <h2 class="second_page_header">Help us change how teams communicate</h2>
+                        <div class="team_communicate_text">
+                            <div class="element_team_communicate_text">
+                                <img src="./img/svg/engage_customer.svg" alt="Engage customer">
+                                <h3>Engage Customers</h3>
+                                <p>It is a long established fact that a reader will be</p>
+                            </div>
+                            <div class="element_team_communicate_text">
+                                <img src="./img/svg/email_marketing.svg" alt="Email Marketing">
+                                <h3>Email Marketing</h3>
+                                <p>It is a long established fact that a reader will be</p>
+                            </div>
+                            <div class="element_team_communicate_text">
+                                <img src="./img/svg/team_accounts.svg" alt="Team Accounts">
+                                <h3>Team Accounts</h3>
+                                <p>It is a long established fact that a reader will be</p>
+                            </div>
+                            <div class="element_team_communicate_text">
+                                <img src="./img/svg/security_managment.svg" alt="Security Managment">
+                                <h3>Security Managment</h3>
+                                <p>It is a long established fact that a reader will be</p>
+                            </div>
+                        </div>
+                    </section>
+                    <img src="./img/svg/man_vs_laptop.svg" alt="Man vs laptop" class="man_vs_laptop_img">
+                </div>
+            </div>
+            <!-- Second page end-->
+            <!-- Third page start-->
+            <div class="third_page">
+                <div class="third_page_wrapper">
+                    <section class="third_page_text">
+                        <h2>We believe in helping people pay attention to what matters</h2>
+                        <p class="third_page_paragraph">Create screens directly in Singleton or add your images from
+                            Sketch or Figma. You can even sync designs from your cloud storage!</p>
+                        <div class="icons_with_description">
+                            <div class="element_icons_with_description">
+                                <img src="./img/svg/engage_customer.svg" alt="Engage customer"
+                                    class="teams_communicate_icons_img">
+                                <h3 class="element_header_icons_with_descriptions">Engage Customers</h3>
+                                <p class="element_paragraph_icons_with_descriptions">It is a long established fact that
+                                    a reader will be distracted</p>
+                            </div>
+                            <div class="element_icons_with_description">
+                                <img src="./img/svg/email_marketing.svg" alt="Email marketing"
+                                    class="teams_communicate_icons_img">
+                                <h3 class="element_header_icons_with_descriptions">Email Marketings</h3>
+                                <p class="element_paragraph_icons_with_descriptions">It is a long established fact that
+                                    a reader will be distracted</p>
+                            </div>
+                            <div class="element_icons_with_description">
+                                <img src="./img/svg/team_accounts.svg" alt="Team accounts"
+                                    class="teams_communicate_icons_img">
+                                <h3 class="element_header_icons_with_descriptions">Team Accounts</h3>
+                                <p class="element_paragraph_icons_with_descriptions">It is a long established fact that
+                                    a reader will be distracted</p>
+                            </div>
+                            <div class="element_icons_with_description">
+                                <img src="./img/svg/security_managment.svg" alt="Security managment"
+                                    class="teams_communicate_icons_img">
+                                <h3 class="element_header_icons_with_descriptions">Security Managment</h3>
+                                <p class="element_paragraph_icons_with_descriptions">It is a long established fact that
+                                    a reader will be distracted</p>
+                            </div>
+                            <div class="element_icons_with_description">
+                                <img src="./img/svg/user_administrator.svg" alt="User administration"
+                                    class="teams_communicate_icons_img">
+                                <h3 class="element_header_icons_with_descriptions">User Administration</h3>
+                                <p class="element_paragraph_icons_with_descriptions">It is a long established fact that
+                                    a reader will be distracted</p>
+                            </div>
+                            <div class="element_icons_with_description">
+                                <img src="./img/svg/digital_agency.svg" alt="Digital agency"
+                                    class="teams_communicate_icons_img">
+                                <h3 class="element_header_icons_with_descriptions">Digital Agency</h3>
+                                <p class="element_paragraph_icons_with_descriptions">It is a long established fact that
+                                    a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </section>
+                    <a href="#" class="button_explore_all_features">Explore All Features &nbsp <img
+                            src="./img/svg/arrow_right.svg" alt="Right white arrow"></a>
+                </div>
+            </div>
+            <!-- Third page end-->
+            <!-- Fourth page start-->
+            <div class="fourth_page">
+                <div class="fourth_page_wrapper">
+                    <h2 class="fouth_page_header">Pricing Options</h2>
+                    <p class="fourth_page_paragraph">Create screens directly in Singleton or add your images from Sketch
+                        or Figma. You can even sync designs from your cloud storage!</p>
+                    <form class="plan_of_paying">
+                        <fieldset class="wrapper_plan_of_paying">
+                            <div class="element_of_plan_paying">
+                                <h3 class="header_of_plan_paying_element">Started</h3>
+                                <p class="paragraph_of_plan_paying_element">Go beyond email and customize your workflow
+                                </p>
+                                <div class="cost_and_description">
+                                    <p class="cost_of_plan_paying">$8.99</p>
+                                    <div class="description_of_cost_plan_wrapper">
+                                        <p class="per_month">per month</p>
+                                        <p class="per_user">per user</p>
+                                    </div>
+                                </div>
+                                <input type="submit" id="select_plan_id" class="button_select_cost_plan"
+                                    value="Select Plan">
+                            </div>
+                            <div class="element_of_plan_paying">
+                                <h3 class="header_of_plan_paying_element">Started</h3>
+                                <p class="paragraph_of_plan_paying_element">Go beyond email and customize your workflow
+                                </p>
+                                <div class="cost_and_description">
+                                    <p class="cost_of_plan_paying">$19.99</p>
+                                    <div class="description_of_cost_plan_wrapper">
+                                        <p class="per_month">per month</p>
+                                        <p class="per_user">per user</p>
+                                    </div>
+                                </div>
+                                <input type="submit" id="select_plan_id" class="button_select_cost_plan"
+                                    value="Select Plan">
+                            </div>
+                            <div class="element_of_plan_paying">
+                                <h3 class="header_of_plan_paying_element">Started</h3>
+                                <p class="paragraph_of_plan_paying_element">Go beyond email and customize your workflow
+                                </p>
+                                <div class="cost_and_description">
+                                    <p class="cost_of_plan_paying">$44.99</p>
+                                    <div class="description_of_cost_plan_wrapper">
+                                        <p class="per_month">per month</p>
+                                        <p class="per_user">per user</p>
+                                    </div>
+                                </div>
+                                <input type="submit" id="select_plan_id" class="button_select_cost_plan"
+                                    value="Select Plan">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- Fourth page end-->
+            <!-- Five page start-->
+            <div class="five_page">
+                <div class="five_page_wrapper">
+                    <div class="wrapper_for_img">
+                        <img src="./img/svg/safari_browser.svg" alt="Safari browser" class="safari_browser_img">
+                        <div class="shadow_of_img"></div>
+                    </div>
+                    <div class="five_page_text">
+                        <h3>Product of the day</h3>
+                        <h2>The easiest way to turn your passion into income</h2>
+                        <p>Create screens directly in Singleton or add your images from Sketch or Figma. You can even
+                            sync designs from your cloud storage!</p>
+                        <form>
+                            <input type="email" placeholder="Type your e-mail">
+                            <input type="button" value="Download Now">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Five page end-->
+            <!-- Six page start-->
+            <div class="six_page">
+                <div class="six_page_wrapper">
+                    <div class="dsecr_button_contacts">
+                        <div class="descr_button">
+                            <p>We point past each other with our words, arguing as though we are looking at the same
+                                facts and experiences.</p>
+                            <input type="button" value="Ask Question">
+                        </div>
+                        <div class="contacts">
+                            <div class="contacts_elem">
+                                <p>About</p>
+                                <ul>
+                                    <li><a href="#">Our Mission</a></li>
+                                    <li><a href="#">Our Story</a></li>
+                                    <li><a href="#">Our Culture</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                </ul>
+                            </div>
+                            <div class="contacts_elem">
+                                <p>Blog</p>
+                                <ul>
+                                    <li><a href="#">Business Stories</a></li>
+                                    <li><a href="#">Digital Mums</a></li>
+                                    <li><a href="#">Learning</a></li>
+                                    <li><a href="#">Social Media</a></li>
+                                </ul>
+                            </div>
+                            <div class="contacts_elem">
+                                <p>Contacts</p>
+                                <p class="contacts_descr">Fell free get in touch with us via phone or send us a message</p>
+                                <ul>
+                                    <li><a href="#">+72 699 241-395</a></li>
+                                    <li><a href="#">hello@craftwork.design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+
+                    </div>
+                    <div class="links_on_external_sites">
+                        <p>© 2017 getcraftwork.com. All rights reserved.</p>
+                        <ul>
+                            <li><a href="#"><img src="./img/svg/linkedin_icon.svg" alt="linkedin"></a></li>
+                            <li><a href="#"><img src="./img/svg/google_icon.svg" alt="google"></a></li>
+                            <li><a href="#"><img src="./img/svg/twitter_icon.svg" alt="twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Six page end-->
+        </div>
+    </main>
+</body>
+
+</html>
